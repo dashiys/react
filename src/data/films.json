@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Psycho",
+        "director": "Alfred Hitchcock",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/7/76/Psycho_%281960%29_theatrical_poster_%28retouched%29.jpg"
+    },
+    {
+        "title": "The Shining",
+        "director": "Stanley Kubrick",
+        "img": "https://m.media-amazon.com/images/I/818ULWwffPL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "title": "The Exorcist",
+        "director": "William Friedkin",
+        "img": "https://pics.filmaffinity.com/El_exorcista-742137399-mmed.jpg"
+    },
+    {
+        "title": "Halloween",
+        "director": "John Carpenter",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Jack-o%27-Lantern_2003-10-31.jpg/800px-Jack-o%27-Lantern_2003-10-31.jpg"
+    },
+    {
+        "title": "A Nightmare on Elm Street",
+        "director": "Wes Craven",
+        "img": "https://m.media-amazon.com/images/M/MV5BODIxMTQ0NTIxM15BMl5BanBnXkFtZTcwMzY1NDAyMw@@._V1_FMjpg_UX1000_.jpg"
+    }
+]
