@@ -2,7 +2,7 @@ import CompoUno from "./components/UD/CompoUno"
 import CompoDos from "./components/UD/CompoDos"
 import { useState } from 'react';
 
-const App = () => {
+const Appe = () => {
     const [resu, setResu] = useState(0)
     return (
         <div><CompoUno sendVal={setResu} />
@@ -12,4 +12,4 @@ const App = () => {
     )
 }
 
-export default App
+export default Appe

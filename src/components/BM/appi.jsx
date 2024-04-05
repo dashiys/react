@@ -1,7 +1,7 @@
 // -------------------------------------------
 import Movies from "./components/Movies"
 import films from "./data/films.json"
-const App = () => {
+const Appi = () => {
     return (
         <div>
             {films.map((film, i) =>
@@ -11,7 +11,7 @@ const App = () => {
     )
 }
 
-export default App
+export default Appi
 
 // ---------------------------------------
 // import Book from "./components/Book"

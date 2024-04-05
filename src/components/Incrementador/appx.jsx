@@ -1,7 +1,7 @@
 import Opee from "./components/Incrementador/Opee"
 import { useState } from 'react';
 
-const App = () => {
+const Appx = () => {
     const [resu, setResu] = useState(0)
     return (
         <div>
@@ -11,4 +11,4 @@ const App = () => {
     )
 }
 
-export default App
+export default Appx
