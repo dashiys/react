@@ -11,7 +11,7 @@ import ReactDOM from 'react-dom/client'
 // import App from "./StateRect"
 // import App from "./Img"
 // import App from "./CondiD"
-// import App from "./App"
+import App from "./App"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
