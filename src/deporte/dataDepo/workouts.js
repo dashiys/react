@@ -1,6 +1,6 @@
-import bridge from './../img/bridge.png';
-import backExtension from './../img/back-extensions.png';
-import hipOpeners from './../img/hip-openers.png';
+import bridge from '../imgDepo/bridge.png';
+import backExtension from '../imgDepo/back-extensions.png';
+import hipOpeners from '../imgDepo/hip-openers.png';
 
 export default [
     {
