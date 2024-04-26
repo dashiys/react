@@ -1,12 +1,5 @@
+import Libros from "./libros/Libros";
 
-import Deportes from "./deporte/Deportes"
+const App = () => <Libros />
 
-const App = () => {
-    return (
-        <div>
-            <Deportes />
-        </div>
-    )
-}
-
-export default App
+export default App;
