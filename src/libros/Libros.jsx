@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-import { getItems, createItem, updateItem, deleteItem } from '../app/services/people';
+import { getItems, createItem } from '../app/services/people';
+import { Tr } from './Tr';
 
 const Libros = () => {
     const [books, setBooks] = useState([])
@@ -21,21 +22,12 @@ const Libros = () => {
                     <th>Id</th>
                     <th>Title</th>
                     <th>Price</th>
-                    <th>option</th>
+                    <th>Option</th>
                 </tr>
 
-                {books.map(book => <tr key={book.id}>
-                    <td>{book.id}</td>
-                    <td><input type="text" value={book.title} onChange={(e) => setTitle(e.target.value)} /></td>
-                    <td><input type="text" value={book.price} onChange={(e) => setPrice(e.target.value)} /></td>
-                    <td> <button onClick={async () => {
-                        await deleteItem({ title, price })
-                    }}>Remove</button>
-                        {<button onClick={async () => {
-                            await updateItem({ title, price })
-                        }}>Update</button>}
-                    </td>
-                </tr>)}
+                {books.map(book =>
+                    <Tr key={book.id} book={book} renderBooks={Consulta} />
+                )}
                 <tr>
                     <td></td>
                     <td><input type="text" onChange={(e) => setTitle(e.target.value)} /></td>
@@ -45,12 +37,9 @@ const Libros = () => {
                         Consulta()
                     }}>Add</button>
 
-
                     </td>
                 </tr>
             </table>
-
-
         </div>
     )
 }

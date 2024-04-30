@@ -1,5 +1,5 @@
-import Libros from "./libros/Libros";
+import Router from "../src/tareas/app/Router";
 
-const App = () => <Libros />
+const App = () => <Router />
 
 export default App;

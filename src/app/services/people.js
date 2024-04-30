@@ -3,8 +3,8 @@ import { auth, signInWithEmailAndPassword, createUserWithEmailAndPassword, signO
 const collectionName = 'books';
 
 // CREATE
-export const createItem = async (obj) => {
-    const colRef = collection(db, collectionName);
+export const createItem = async (obj, userId) => {
+    const colRef = collection(db, collectionName, userId, 'tasks');
     const data = await addDoc(colRef, obj);
     return data.id;
 }
@@ -34,6 +34,13 @@ export const getItemById = async (id) => {
     const docRef = doc(db, collectionName, id);
     const result = await getDoc(docRef);
     return result.data();
+}
+
+
+export const getItemsById = async (userId) => {
+    const colRef = collection(db, collectionName, userId, 'tasks');
+    const result = await getDocs(colRef);
+    return getArrayFromCollection(result);
 }
 
 // DELETE

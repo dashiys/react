@@ -12,9 +12,12 @@ import ReactDOM from 'react-dom/client'
 // import App from "./Img"
 // import App from "./CondiD"
 import App from "./App"
+import UserProvider from './tareas/providers/UserProvider'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <UserProvider>
+      <App />
+    </UserProvider>
   </React.StrictMode>,
 )
